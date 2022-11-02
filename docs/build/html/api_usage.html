@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Metrics repository &mdash; althiqa 0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Notebook example" href="demo_althiqa_readthedocs.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> althiqa
+          </a>
+              <div class="version">
+                0.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="motivation.html">Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installing althiqa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="demo_althiqa_readthedocs.html">Notebook example</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Metrics Repository</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Metrics repository</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#classification-metrics">Classification metrics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#regression-metrics">Regression metrics</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">althiqa</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Metrics repository</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/api_usage.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="metrics-repository">
+<h1>Metrics repository<a class="headerlink" href="#metrics-repository" title="Permalink to this heading"></a></h1>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this heading"></a></h2>
+<p>althiqa maintains a wide range of metrics that are available by default
+in the trust radar.</p>
+<p>The relevance of a metric is use case dependant. Therefore, we assign a project type to those metrics to only display them when they make sense for a specific use case.</p>
+<p>You can select or unselect any of those metrics using the UI directly.</p>
+</section>
+<section id="classification-metrics">
+<h2>Classification metrics<a class="headerlink" href="#classification-metrics" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="default_metrics.f1_score">
+<span class="sig-prename descclassname"><span class="pre">default_metrics.</span></span><span class="sig-name descname"><span class="pre">f1_score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_pred</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#default_metrics.f1_score" title="Permalink to this definition"></a></dt>
+<dd><p>The function computes the f1 score for binary classifiers.</p>
+<p>Drawbacks: F1 score, although popular, can generate misleading results on imbalanced datasets, because it fails to consider the ratio between positive and negative elements. F1 varies for class swapping (if the positive class is renamed negative and vice versa.). F1 is independent from the number of samples correctly classified as negative.</p>
+<p>Reference: <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html">https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Y_pred</dt>
+<dd class="field-odd"><p>Predicted target classes.</p>
+</dd>
+<dt class="field-even">Y_test</dt>
+<dd class="field-even"><p>Ground truth target classes.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="default_metrics.balanced_accuracy_adjusted">
+<span class="sig-prename descclassname"><span class="pre">default_metrics.</span></span><span class="sig-name descname"><span class="pre">balanced_accuracy_adjusted</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_pred</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#default_metrics.balanced_accuracy_adjusted" title="Permalink to this definition"></a></dt>
+<dd><p>The function computes the balanced accuracy. It is defined as the average of recall obtained on each class. Random performance  scores 0. Perfect performance has a score of 1.</p>
+<p>Reference: <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.balanced_accuracy_score.html">https://scikit-learn.org/stable/modules/generated/sklearn.metrics.balanced_accuracy_score.html</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Y_pred</dt>
+<dd class="field-odd"><p>Predicted target classes.</p>
+</dd>
+<dt class="field-even">Y_test</dt>
+<dd class="field-even"><p>Ground truth target classes.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="default_metrics.accuracy">
+<span class="sig-prename descclassname"><span class="pre">default_metrics.</span></span><span class="sig-name descname"><span class="pre">accuracy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_pred</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#default_metrics.accuracy" title="Permalink to this definition"></a></dt>
+<dd><p>The function computes accuracy of the model. It returns the fraction of correctly classified samples.</p>
+<p>Drawbacks: Accuracy, although popular, can generate misleading results on imbalanced datasets, because it fails to consider the ratio between positive and negative elements.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Y_pred</dt>
+<dd class="field-odd"><p>Predicted target classes.</p>
+</dd>
+<dt class="field-even">Y_test</dt>
+<dd class="field-even"><p>Ground truth target classes.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="default_metrics.roc_auc_score">
+<span class="sig-prename descclassname"><span class="pre">default_metrics.</span></span><span class="sig-name descname"><span class="pre">roc_auc_score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_pred</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#default_metrics.roc_auc_score" title="Permalink to this definition"></a></dt>
+<dd><p>The function computes the area under the receiver operating characteristic curve.</p>
+<p>Drawbacks: It can be flawed in several ways (sensitive to class-unbalanced datasets or incoherent in terms of misclassification costs) Reference: <a class="reference external" href="https://link.springer.com/content/pdf/10.1007/s10994-009-5119-5.pdf">https://link.springer.com/content/pdf/10.1007/s10994-009-5119-5.pdf</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Y_pred</dt>
+<dd class="field-odd"><p>Predicted target classes.</p>
+</dd>
+<dt class="field-even">Y_test</dt>
+<dd class="field-even"><p>Ground truth target classes.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="default_metrics.expected_calibration_error">
+<span class="sig-prename descclassname"><span class="pre">default_metrics.</span></span><span class="sig-name descname"><span class="pre">expected_calibration_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">probs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#default_metrics.expected_calibration_error" title="Permalink to this definition"></a></dt>
+<dd><p>The Expected Calibration Error (ECE) measures how well a model’s probabilistic predictions reflect the risk they involve.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Probs</dt>
+<dd class="field-odd"><p>Predicted probabilities for each class.</p>
+</dd>
+<dt class="field-even">Y_test</dt>
+<dd class="field-even"><p>Ground truth target classes.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="default_metrics.matthews_corr_coef">
+<span class="sig-prename descclassname"><span class="pre">default_metrics.</span></span><span class="sig-name descname"><span class="pre">matthews_corr_coef</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_pred</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#default_metrics.matthews_corr_coef" title="Permalink to this definition"></a></dt>
+<dd><p>The function computes the MMC score (between -1 and 1) that summarize how good the classification is.</p>
+<p>Advantages: Statistical measures like accuracy or F1 score can dangerously show overoptimistic inflated results, especially on imbalanced datasets. The Matthews correlation coefficient (MCC), instead, is a more reliable statistical rate which produces a high score only if the prediction obtained good results in all of the four confusion matrix categories (true positives, false negatives, true negatives, and false positives), proportionally both to the size of positive elements and the size of negative elements in the dataset. Reference: <a class="reference external" href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-019-6413-7">https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-019-6413-7</a>. In other words, MCC is the only binary classification rate that generates a high score only if the binary predictor was able to correctly predict the majority of positive data instances and the majority of negative data instances. If a confusion matrix threshold is at disposal, the litterature recommends the usage of the Matthews correlation coefficient over F1 score, and accuracy.</p>
+<p>Drawbacks:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Y_pred</dt>
+<dd class="field-odd"><p>Predicted target classes.</p>
+</dd>
+<dt class="field-even">Y_test</dt>
+<dd class="field-even"><p>Ground truth target classes.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="default_metrics.fpr">
+<span class="sig-prename descclassname"><span class="pre">default_metrics.</span></span><span class="sig-name descname"><span class="pre">fpr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_pred</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#default_metrics.fpr" title="Permalink to this definition"></a></dt>
+<dd><p>The function computes the false positive rate for the given threshold. Only works if label are 0 and 1.
+1 is assumed to be the positive class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Y_pred</dt>
+<dd class="field-odd"><p>Predicted target classes.</p>
+</dd>
+<dt class="field-even">Y_test</dt>
+<dd class="field-even"><p>Ground truth target classes.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="default_metrics.tpr">
+<span class="sig-prename descclassname"><span class="pre">default_metrics.</span></span><span class="sig-name descname"><span class="pre">tpr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_pred</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#default_metrics.tpr" title="Permalink to this definition"></a></dt>
+<dd><p>The function computes the true positive rate for the given threshold. Only works if label are 0 and 1.
+1 is assumed to be the positive class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Y_pred</dt>
+<dd class="field-odd"><p>Predicted target classes.</p>
+</dd>
+<dt class="field-even">Y_test</dt>
+<dd class="field-even"><p>Ground truth target classes.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="default_metrics.fnr">
+<span class="sig-prename descclassname"><span class="pre">default_metrics.</span></span><span class="sig-name descname"><span class="pre">fnr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_pred</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#default_metrics.fnr" title="Permalink to this definition"></a></dt>
+<dd><p>The function computes the false negative rate for the given threshold. Only works if label are 0 and 1.
+1 is assumed to be the positive class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Y_pred</dt>
+<dd class="field-odd"><p>Predicted target classes.</p>
+</dd>
+<dt class="field-even">Y_test</dt>
+<dd class="field-even"><p>Ground truth target classes.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="default_metrics.tnr">
+<span class="sig-prename descclassname"><span class="pre">default_metrics.</span></span><span class="sig-name descname"><span class="pre">tnr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_pred</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#default_metrics.tnr" title="Permalink to this definition"></a></dt>
+<dd><p>The function computes the true negative rate for the given threshold. Only works if label are 0 and 1.
+1 is assumed to be the positive class.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="default_metrics.CO2_emission">
+<span class="sig-prename descclassname"><span class="pre">default_metrics.</span></span><span class="sig-name descname"><span class="pre">CO2_emission</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#default_metrics.CO2_emission" title="Permalink to this definition"></a></dt>
+<dd><p>The function computes the CO2 emissions that are produced by model training. It uses 
+the tracker from the codecarbon project. Reference: <a class="reference external" href="https://mlco2.github.io/codecarbon/">https://mlco2.github.io/codecarbon/</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Model</dt>
+<dd class="field-odd"><p>the model on which to evaluate the metric.</p>
+</dd>
+<dt class="field-even">X_test</dt>
+<dd class="field-even"><p>the testing set.</p>
+</dd>
+<dt class="field-odd">Y_test</dt>
+<dd class="field-odd"><p>Ground truth target classes.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="default_metrics.inference_time">
+<span class="sig-prename descclassname"><span class="pre">default_metrics.</span></span><span class="sig-name descname"><span class="pre">inference_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#default_metrics.inference_time" title="Permalink to this definition"></a></dt>
+<dd><p>The function computes the inference time which is averaged on the test set. Note that depending on the design of the network architecture, the architecture complexity does not necessarily reflect the computational requirements for performing network inference (e.g., MobileNet has more parameters than SqueezeNet but has lower computational requirements for network inference). Reference: <a class="reference external" href="https://arxiv.org/pdf/1806.05512.pdf">https://arxiv.org/pdf/1806.05512.pdf</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Model</dt>
+<dd class="field-odd"><p>the model on which to evaluate the metric.</p>
+</dd>
+<dt class="field-even">X_test</dt>
+<dd class="field-even"><p>the testing set.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="default_metrics.NetTrustScore">
+<span class="sig-prename descclassname"><span class="pre">default_metrics.</span></span><span class="sig-name descname"><span class="pre">NetTrustScore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">probs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_pred</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#default_metrics.NetTrustScore" title="Permalink to this definition"></a></dt>
+<dd><p>The function computes the NetTrustScore, a global scalar metric summarizing overall trustworthiness of a model. A model that has higher confidence when predicting correctly will receive a higher marginal trust score for that prediction. A model that has higher confidence when predicting incorrectly will receive a lower marginal trust for that prediction. Scores are then agregated across all predictions. Reference: <a class="reference external" href="https://arxiv.org/pdf/2009.05835.pdf">https://arxiv.org/pdf/2009.05835.pdf</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Probs</dt>
+<dd class="field-odd"><p>Predicted probabilities for each class.</p>
+</dd>
+<dt class="field-even">Y_pred</dt>
+<dd class="field-even"><p>Predicted target classes.</p>
+</dd>
+<dt class="field-odd">Y_test</dt>
+<dd class="field-odd"><p>Ground truth target classes.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="default_metrics.fairness_DI_demographic_parity">
+<span class="sig-prename descclassname"><span class="pre">default_metrics.</span></span><span class="sig-name descname"><span class="pre">fairness_DI_demographic_parity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_pred</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">protected_attribute</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#default_metrics.fairness_DI_demographic_parity" title="Permalink to this definition"></a></dt>
+<dd><p>The disparate impact computed for the fairness demographic parity metric.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Y_pred</dt>
+<dd class="field-odd"><p>Predicted target classes.</p>
+</dd>
+<dt class="field-even">X_test</dt>
+<dd class="field-even"><p>the testing set.</p>
+</dd>
+<dt class="field-odd">Y_test</dt>
+<dd class="field-odd"><p>Ground truth target classes.</p>
+</dd>
+<dt class="field-even">Protected_attribute</dt>
+<dd class="field-even"><p>{
+‘column_name’: ‘column_name’,
+‘type’: ‘cat/float’,
+‘value’: 0 if ‘cat’, [min, max] if ‘float’,
+‘name_prot_attr’: ‘understandable name’</p>
+</dd>
+</dl>
+<p>}</p>
+</dd></dl>
+
+</section>
+<section id="regression-metrics">
+<h2>Regression metrics<a class="headerlink" href="#regression-metrics" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="default_metrics.r2">
+<span class="sig-prename descclassname"><span class="pre">default_metrics.</span></span><span class="sig-name descname"><span class="pre">r2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_pred</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#default_metrics.r2" title="Permalink to this definition"></a></dt>
+<dd><p>The function computes the R-squared for regression models. R-squared explains to what extent the variance of independant input variable explains the variance of the predicted output variable.</p>
+<p>Reference: <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html">https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Y_pred</dt>
+<dd class="field-odd"><p>Predicted target classes.</p>
+</dd>
+<dt class="field-even">Y_test</dt>
+<dd class="field-even"><p>Ground truth target classes.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="default_metrics.mean_absolute_error">
+<span class="sig-prename descclassname"><span class="pre">default_metrics.</span></span><span class="sig-name descname"><span class="pre">mean_absolute_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_pred</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#default_metrics.mean_absolute_error" title="Permalink to this definition"></a></dt>
+<dd><p>The function computes the mean absolute error (MAE), also called the L1 loss for regression models. 
+Advantage: less affected by outliers than the L2 error i.e. more robust. Note that if the use case does require to pay attention to the outliers, it might be an drawback rather than an advantage and MSE might be a better choice.
+Drawbacks: as a loss function, it is not differentiable (i.e. it might present difficulties in the gradient computations during backpropagation). It can be unstable (the solution i.e. the decision boundary is NOT changing smoothly with small data changes).</p>
+<p>Reference: <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_absolute_error.html">https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_absolute_error.html</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Y_pred</dt>
+<dd class="field-odd"><p>Predicted target classes.</p>
+</dd>
+<dt class="field-even">Y_test</dt>
+<dd class="field-even"><p>Ground truth target classes.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="default_metrics.mean_squared_error">
+<span class="sig-prename descclassname"><span class="pre">default_metrics.</span></span><span class="sig-name descname"><span class="pre">mean_squared_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_pred</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#default_metrics.mean_squared_error" title="Permalink to this definition"></a></dt>
+<dd><p>The function computes the mean squared error (MSE), also called the L2 loss for regression models. 
+Advantages: the MSE is stable (the solution i.e. the decision boundary is changing smoothly with small data changes) and differentiable.
+Drawbacks: the MSE is more affected by outliers than the L1 error i.e. less robust. Note that if the use case does require to pay attention to the outliers, it might be an advantage rather than a drawback and MSE might be a better choice.
+Reference: <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html">https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Y_pred</dt>
+<dd class="field-odd"><p>Predicted target classes.</p>
+</dd>
+<dt class="field-even">Y_test</dt>
+<dd class="field-even"><p>Ground truth target classes.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="default_metrics.CO2_emission_regression">
+<span class="sig-prename descclassname"><span class="pre">default_metrics.</span></span><span class="sig-name descname"><span class="pre">CO2_emission_regression</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#default_metrics.CO2_emission_regression" title="Permalink to this definition"></a></dt>
+<dd><p>The function computes the CO2 emissions that are produced by model training. It uses 
+the tracker from the codecarbon project. Reference: <a class="reference external" href="https://mlco2.github.io/codecarbon/">https://mlco2.github.io/codecarbon/</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Model</dt>
+<dd class="field-odd"><p>the model on which to evaluate the metric.</p>
+</dd>
+<dt class="field-even">X_test</dt>
+<dd class="field-even"><p>the testing set.</p>
+</dd>
+<dt class="field-odd">Y_test</dt>
+<dd class="field-odd"><p>Ground truth target classes.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="default_metrics.inference_time_regression">
+<span class="sig-prename descclassname"><span class="pre">default_metrics.</span></span><span class="sig-name descname"><span class="pre">inference_time_regression</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#default_metrics.inference_time_regression" title="Permalink to this definition"></a></dt>
+<dd><p>The function computes the inference time which is averaged on the test set. Note that depending on the design of the network architecture, the architecture complexity does not necessarily reflect the computational requirements for performing network inference (e.g., MobileNet has more parameters than SqueezeNet but has lower computational requirements for network inference). Reference: <a class="reference external" href="https://arxiv.org/pdf/1806.05512.pdf">https://arxiv.org/pdf/1806.05512.pdf</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Model</dt>
+<dd class="field-odd"><p>the model on which to evaluate the metric.</p>
+</dd>
+<dt class="field-even">X_test</dt>
+<dd class="field-even"><p>the testing set.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="demo_althiqa_readthedocs.html" class="btn btn-neutral float-left" title="Notebook example" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, althiqa.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
