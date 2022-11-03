@@ -6,7 +6,9 @@
 <a href="https://github.com/althiqa/althiqa_lib/blob/main/LICENSE">
      <img alt="GitHub" src="https://img.shields.io/badge/License-MIT-blue.svg">
  </a>
+ <a href="https://althiqa-lib.readthedocs.io/en/latest/?badge=latest">
+     <img alt="GitHub" src="https://readthedocs.org/projects/althiqa-lib/badge/?version=latest">
+ </a>
 </p>
-[![Documentation Status](https://readthedocs.org/projects/althiqa-lib/badge/?version=latest)](https://althiqa-lib.readthedocs.io/en/latest/?badge=latest)
 # althiqa_lib
 althiqa's API
