@@ -10,5 +10,6 @@
      <img alt="GitHub" src="https://readthedocs.org/projects/althiqa-lib/badge/?version=latest">
  </a>
 </p>
+
 # althiqa_lib
 althiqa's API
