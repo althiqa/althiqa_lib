@@ -37,7 +37,7 @@ The tool brings together two types of users:
 
 ### When business teams wants to monitor coarse-grained metrics on production models.
 
-Business managers and models' operators are empowered with holistic reporting on AI projects in real time.
+- Business managers and models' operators are empowered with holistic reporting on AI projects in real time.
 
 
 # 📚 Resources
@@ -48,7 +48,7 @@ Different stakeholders care about different metrics. Here are some resources (in
 
 <a href="https://arxiv.org/pdf/2206.09511.pdf">The Fallacy of AI Functionality.</a>"Throughout the chain of actors, potential miscommunications or outright lies can happen about the performance, functional safety or other aspects of deployed AI/ML systems. Communication failures often co-occur with other functional safety problems, and the lack of accountability". 
 
-# 🚀Try it out!
+# 🚀 Try it out!
 
 Reach out to get your credential [althiqa](mailto:info@althiqa.io?).
 
