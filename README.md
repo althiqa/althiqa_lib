@@ -50,7 +50,7 @@ Different stakeholders care about different metrics. Here are some resources (in
 
 # 🚀 Try it out!
 
-Reach out to get your credential [althiqa](mailto:info@althiqa.io?).
+Reach out to get your credentials [althiqa](mailto:info@althiqa.io?).
 
 ### 💻  Installation
 ```bash
