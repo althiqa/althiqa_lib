@@ -21,7 +21,7 @@ The tool brings together two types of users:
 - 👩‍💼 Non-technical experts (e.g. business, compliance, risk teams) on the other hand can interact with a no code interface to gain visibility, understanding and trust in their AI models. 
 
 <p align="center">
-  <img src="https://github.com/althiqa/althiqa_lib/blob/main/img/interface_althiqa_viz.png" width="500">
+  <img src="https://github.com/althiqa/althiqa_lib/blob/main/img/althiqa_interface_project.png" width="1000">
 </p>
 
 # When should you use althiqa?
